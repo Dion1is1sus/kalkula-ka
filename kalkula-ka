@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Kalkulačka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, total = 0;
+            string operace;
+            
+            a = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
+           operace = Console.ReadLine();
+            if (operace == "+") 
+            {
+                total = a + b;
+            }
+      
+            else if   (operace == "-")
+            {
+                total = a - b;
+            }
+      
+            else if (operace == "/")
+            {
+                total = a / b;
+            }
+   
+            else if (operace == "*")
+            {
+                total = a * b;
+            }
+            Console.WriteLine("total=" + total);
+            Console.ReadKey();
+
+        }
+
+    }
+}
