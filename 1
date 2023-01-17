@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> uzivatelCisla = new List<int>();
+            while (true)
+            {
+                string vstup = Console.ReadLine();
+
+                if (vstup == "n")
+                {
+                    
+                    break;
+                }
+                uzivatelCisla.Add(int.Parse(vstup));
+            }
+            uzivatelCisla.Sort();
+            foreach (int i in uzivatelCisla)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(uzivatelCisla[ uzivatelCisla.Count - 3]);
+            Console.ReadKey();
+        }
+
+    }
+}
